@@ -61,47 +61,36 @@ func main() {
 		}
 
 	// print all structs
-	for _, admissions := range admissions { 
-		 fmt.Println("Fullname:", admissions.Fullname)
-		  fmt.Println("Age:" , admissions.Age)
-		 fmt.Println("Created At:" ,admissions.CreatedAt)
-		 fmt.Println("Updated At:" , admissions.UpdatedAt)
-		 fmt.Println("High School Name:", admissions.HighSchoolName)
-		 fmt.Println("Date Of Birth:" ,admissions.DateOfBirth)
-		 fmt.Println("Place Of Birt:" , admissions.PlaceOfBirth)
-		 fmt.Println("Hometown:" , admissions.Hometown)
-	}
+	//for _, admissions := range admissions { 
+		// fmt.Println("Fullname:", admissions.Fullname)
+		//  fmt.Println("Age:" , admissions.Age)
+		 //fmt.Println("Created At:" ,admissions.CreatedAt)
+		 //fmt.Println("Updated At:" , admissions.UpdatedAt)
+		 //fmt.Println("High School Name:", admissions.HighSchoolName)
+		 //fmt.Println("Date Of Birth:" ,admissions.DateOfBirth)
+		// fmt.Println("Place Of Birt:" , admissions.PlaceOfBirth)
+		 //fmt.Println("Hometown:" , admissions.Hometown)
+	
 
 
 
 		 // 2. loop through the struct and print the students information
 		 for _, admissions:=range admissions {
-			//fmt.Print(i+1," ")
 			fmt.Println(
 			"Fullname——" , admissions.Fullname,
 			"Age—-" , admissions.Age,
 			"High School Name:" ,admissions.HighSchoolName, )
-			fmt.Println("**************************************")
+			fmt.Println("***************")
 
-
-		 }
-
-
+			}
+		 
 
 // 3. Add total ages in array and display answer
 		 totalAges := 0
 for _, admission := range admissions {
 	totalAges += admission.Age
-	fmt.Println("Total ages:" ,totalAges)
+}
+	fmt.Println("Total ages:",totalAges)
 
 } 
-		 //fmt.Printf(admissions.Age)
-		 //fmt.Printf(admissions.CreatedAt)
-		 //fmt.Printf(admissions.UpdatedAt)
-		 //fmt.Printf(admissions.HighSchoolName)
-		 //fmt.Printf(admissions.DateOfBirth)
-		 //fmt.Printf(admissions.PlaceOfBirth)
-		 //fmt.Printf(admissions.Hometown)
 		
-		
-		}
