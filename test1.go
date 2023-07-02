@@ -61,6 +61,7 @@ func main() {
 		}
 
 	// print all structs
+	fmt.Println(admissions)
 	//for _, admissions := range admissions { 
 		// fmt.Println("Fullname:", admissions.Fullname)
 		//  fmt.Println("Age:" , admissions.Age)
